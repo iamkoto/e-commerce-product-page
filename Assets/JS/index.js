@@ -1,4 +1,4 @@
-$(Product-page).ready(function(){
+$(document).ready(function(){
     $('.spot-left__bigimg').slick({
         slidesToShow: 1,
         slitesToScroll: 1,
