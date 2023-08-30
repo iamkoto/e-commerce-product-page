@@ -177,6 +177,7 @@ body {
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   font-family: "Kumbh Sans", sans-serif;
 }
 
