@@ -1,0 +1,8 @@
+.spot {
+    display: flex;
+    gap: 100px;
+    
+    &-left {
+        display: none;
+    }
+}

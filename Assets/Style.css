@@ -213,4 +213,12 @@ body {
   width: 50px;
 }
 
+.spot {
+  display: flex;
+  gap: 100px;
+}
+.spot-left {
+  display: none;
+}
+
 /*# sourceMappingURL=Style.css.map */
