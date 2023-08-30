@@ -1,17 +1,19 @@
 $(document).ready(function(){
-    $('.spot-left__bigimg').slick({
+    $('.spot-left__bigimgs').slick({
         slidesToShow: 1,
         slitesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavfor: '.spot-left__smallimg',    
+        infinite: false,
+        swipeToSlide: false,
+        asNavFor: '.spot-left__smallimgs',    
     });
-    $('.spot-left__smallimg').slick({
-        slidesToShow: 3,
+    $('.spot-left__smallimgs').slick({
+        slidesToShow: 4,
         slidesToScroll: 1,
-        asNavfor: '.spot-left__bigimg',
-        dots: true,
-        centerMode: true,
+        asNavFor: '.spot-left__bigimgs',
+        arrows: false,
+        infinite: true,
         focusOnSelect: true,
     });
 })
