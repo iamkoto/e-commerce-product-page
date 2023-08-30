@@ -217,5 +217,55 @@ body {
   display: flex;
   gap: 100px;
 }
+.spot-left {
+  display: none;
+}
+.spot-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.spot-right__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: hsl(26, 100%, 55%);
+}
+.spot-right__product {
+  font-size: 40px;
+  font-weight: bold;
+}
+.spot-right__text {
+  font-size: 18px;
+  color: hsl(219, 9%, 45%);
+}
+.spot-right__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.spot-right__price-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  background-color: rgba(255, 125, 26, 0.119);
+  font-size: 18px;
+  color: hsl(26, 100%, 55%);
+}
+.spot-right__oldprice {
+  font-size: 18px;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 /*# sourceMappingURL=Style.css.map */
