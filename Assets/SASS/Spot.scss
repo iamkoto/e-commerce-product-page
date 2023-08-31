@@ -35,7 +35,8 @@
     &-right {
         display: flex;
         flex-direction: column;
-        width: 45%;
+        justify-content: center;
+        width: 42%;
         gap: 30px;
 
         &__title {
@@ -87,6 +88,50 @@
             color: hsl(220, 14%, 75%);
             text-decoration: line-through;
         }
+
+        &__buy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 40%;
+            height: 70px;
+            background-color: hsla(220, 14%, 75%, 0.266);
+            border-radius: 10px;
+
+            &-container {
+                display: flex;
+                gap: 40px;
+            }
+
+            &-quantity {
+                border-color: #cccccc;
+                outline: 0;
+                -webkit-box-shadow: none;
+                        box-shadow: none;
+                text-align: center;
+            }
+
+            &-img {
+                width: 20px;
+            }
+
+            &-addcart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                width: 60%;
+                background-color: hsl(26, 100%, 55%);
+                height: 70px;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+        }
+
     }
 }
 
