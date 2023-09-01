@@ -293,7 +293,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  padding: 10px;
   width: 40%;
   height: 70px;
   background-color: hsla(220, 14%, 75%, 0.266);
@@ -304,11 +304,12 @@ body {
   gap: 40px;
 }
 .spot-right__buy-quantity {
-  border-color: #cccccc;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  border: none;
+  background-color: transparent;
   text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
 }
 .spot-right__buy-img {
   width: 20px;
@@ -325,6 +326,7 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Style.css.map */
