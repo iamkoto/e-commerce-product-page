@@ -113,6 +113,16 @@
                 font-size: 15px;
             }
 
+            &-plus, 
+            &-minus {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70px;
+                width: 40px;
+                cursor: pointer;            
+            }
+
             &-img {
                 width: 20px;
             }
