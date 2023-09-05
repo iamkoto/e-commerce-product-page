@@ -211,9 +211,15 @@ body {
 }
 .header-right__avatar {
   width: 50px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 1px solid transparent;
+}
+.header-right__avatar:hover {
+  border-color: hsl(26, 100%, 55%);
 }
 .header-right__cart {
-  position: absolute;
+  position: relative;
 }
 .header-right__cart-img {
   cursor: pointer;
@@ -225,20 +231,22 @@ body {
   gap: 30px;
   flex-direction: column;
   width: 400px;
-  position: relative;
+  position: absolute;
   z-index: 99;
   background-color: #fff;
   padding: 20px;
   border-radius: 15px;
+  transition: ease-in-out 0.5s;
+  top: 0;
+  right: 0;
+  transform: translate(50%, 0);
   opacity: 0;
   visibility: hidden;
-  transition: ease-in-out 0.5s;
 }
 .header-right__cart-box.active {
   opacity: 1;
   visibility: visible;
-  bottom: -160px;
-  left: -100px;
+  top: 50px;
 }
 .header-right__cart-box__title {
   color: #000;

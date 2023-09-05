@@ -47,16 +47,17 @@
       </nav>
     </div>
     <div class="header-right">
-      <img class="header-right__cart-img" src="./Assets/images/icon-cart.svg" alt="cart">
-      <img class="header-right__avatar" src="./Assets/images/image-avatar.png" alt="avatar">
+      
+      
       <div class="header-right__cart">
+        <img class="header-right__cart-img" src="./Assets/images/icon-cart.svg" alt="cart">
         <div class="header-right__cart-box">
           <p class="header-right__cart-box__title">
             Cart
           </p>
           <div class="header-right__cart-box__product">
             <img class="header-right__cart-box__img" src="./Assets/images/image-product-1-thumbnail.jpg" alt="product1">
-            <p>Fall Limited Edition Sneakers $125.00 x 3 <span>$375.00</span></p>
+            <p>Fall Limited Edition Sneakers $125.00 x <span id="quant">3</span> <span>$375.00</span></p>
             <img src="./Assets/images/icon-delete.svg" alt="delete">
           </div>
           <a class="header-right__cart-box__checkout" href="#">Checkout</a>
@@ -65,7 +66,7 @@
 
         </div>
       </div> 
-      
+      <img class="header-right__avatar" src="./Assets/images/image-avatar.png" alt="avatar"> 
     </div>
   </header>
 
@@ -128,7 +129,7 @@
             <img class="spot-right__buy-img" src="./Assets/images/icon-minus.svg" alt="minus">
           </div>
         </div>
-        <div class="spot-right__buy-addcart">
+        <div id="buy" class="spot-right__buy-addcart">
           <img class="spot-right__buy-addcart__img" src="./Assets/images/icon-cart - Branco.svg" alt="">
           <p>Add to cart</p>
         </div>

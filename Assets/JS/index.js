@@ -36,7 +36,14 @@ $(document).ready(function(){
             inputField.val(currentValue);
         }
       });
-      $('.header-right').on('click', function(){
-        $('.header-right__cart-box').addClass('.active')
+      $('#buy').on('click', function(){
+        var quant = $('#quant');
+        var inputField = $('#spot-right__buy-quantity');
+        var currentValue = parseInt(inputField.val());
+        quant.text(currentValue);
+        
+      })
+      $('.header-right__cart-img').on('click', function(){
+        $('.header-right__cart-box').toggleClass('active')
       });
 })
