@@ -36,4 +36,7 @@ $(document).ready(function(){
             inputField.val(currentValue);
         }
       });
+      $('.header-right').on('click', function(){
+        $('.header-right__cart-box').addClass('.active')
+      });
 })

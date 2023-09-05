@@ -39,7 +39,6 @@ body {
         display: flex;
         gap: 30px;
         align-items: center;
-        cursor: pointer;
 
         &__avatar {
             width: 50px;
@@ -48,8 +47,10 @@ body {
 
         &__cart {
             position: absolute;
-            opacity: 0;
-            visibility: 0;
+
+            &-img {
+                cursor: pointer;
+            }
 
             &-box {
                 display: flex;
@@ -59,12 +60,20 @@ body {
                 flex-direction: column;
                 width: 400px;
                 position: relative;
-                bottom: -160px;
-                left: -100px;
                 z-index: 99;
                 background-color: #fff;
                 padding: 20px;
                 border-radius: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: ease-in-out 0.5s;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                    bottom: -160px;
+                    left: -100px;
+                }
 
                 &__title {
                     color: #000;

@@ -208,15 +208,15 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
-  cursor: pointer;
 }
 .header-right__avatar {
   width: 50px;
 }
 .header-right__cart {
   position: absolute;
-  opacity: 0;
-  visibility: 0;
+}
+.header-right__cart-img {
+  cursor: pointer;
 }
 .header-right__cart-box {
   display: flex;
@@ -226,12 +226,19 @@ body {
   flex-direction: column;
   width: 400px;
   position: relative;
-  bottom: -160px;
-  left: -100px;
   z-index: 99;
   background-color: #fff;
   padding: 20px;
   border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.5s;
+}
+.header-right__cart-box.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: -160px;
+  left: -100px;
 }
 .header-right__cart-box__title {
   color: #000;
