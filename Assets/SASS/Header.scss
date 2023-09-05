@@ -39,19 +39,17 @@ body {
         display: flex;
         gap: 30px;
         align-items: center;
+        cursor: pointer;
 
         &__avatar {
             width: 50px;
-            cursor: pointer;
+            
         }
 
         &__cart {
             position: absolute;
-            opacity: 1;
-
-            &-img {
-                cursor: pointer;
-            }
+            opacity: 0;
+            visibility: 0;
 
             &-box {
                 display: flex;
@@ -59,11 +57,14 @@ body {
                 align-items: center;
                 gap: 30px;
                 flex-direction: column;
-                width: 300px;
+                width: 400px;
                 position: relative;
-                bottom: -180px;
+                bottom: -160px;
                 left: -100px;
                 z-index: 99;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 15px;
 
                 &__title {
                     color: #000;
@@ -71,12 +72,15 @@ body {
                     width: 400px;
                     height: 50px;
                     border-bottom: 1px solid hsl(220, 14%, 75%);
+                    background-color: #fff;
+                    text-indent: 20px;
                 }
 
                 &__product {
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    background-color: #fff;
                 }
 
                 &__img {
