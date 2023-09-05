@@ -42,6 +42,58 @@ body {
 
         &__avatar {
             width: 50px;
+            cursor: pointer;
+        }
+
+        &__cart {
+            position: absolute;
+            opacity: 1;
+
+            &-img {
+                cursor: pointer;
+            }
+
+            &-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                flex-direction: column;
+                width: 300px;
+                position: relative;
+                bottom: -180px;
+                left: -100px;
+                z-index: 99;
+
+                &__title {
+                    color: #000;
+                    font-weight: bold;
+                    width: 400px;
+                    height: 50px;
+                    border-bottom: 1px solid hsl(220, 14%, 75%);
+                }
+
+                &__product {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                &__img {
+                    width: 50px;
+                    border-radius: 10px;
+                }
+
+                &__checkout {
+                    text-align: center;
+                    width: 300px;
+                    line-height: 50px;
+                    border-radius: 15px;
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: hsl(26, 100%, 55%);
+                }
+            }
         }
     }
 }
