@@ -38,12 +38,21 @@ $(document).ready(function(){
       });
       $('#buy').on('click', function(){
         var quant = $('#quant');
+        var price = $('#price');
+        var priceQuant = parseInt(price);
+        var priceEnd = $('#price-end');
+        // Pega a quantidade de produtos
         var inputField = $('#spot-right__buy-quantity');
         var currentValue = parseInt(inputField.val());
         quant.text(currentValue);
-        
-      })
+        // Fim pega a quantidade de produtos
+        // Calcula o preço final
+        console.log(2 * currentValue)
+        // Fim calcula o preço final
+
+      });
       $('.header-right__cart-img').on('click', function(){
         $('.header-right__cart-box').toggleClass('active')
       });
+      
 })
