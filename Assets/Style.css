@@ -248,12 +248,6 @@ body {
   visibility: visible;
   top: 50px;
 }
-.header-right__cart-box__full {
-  display: none;
-}
-.header-right__cart-box__full.active {
-  display: block;
-}
 .header-right__cart-box__empty {
   display: none;
   align-items: center;

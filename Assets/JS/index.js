@@ -61,20 +61,25 @@ $(document).ready(function(){
       function deleteProd() {
         $('#delete').on('click', function(){
           $(this).parent().remove();
+          $('.header-right__cart-box__checkout').remove();
           $('.header-right__cart-box__empty').toggleClass('active');
         });
       };
 
       function createProd() {
         var fullBox = $('.header-right__cart-box__full');
+        var boxProd = $('.header-right__cart-box__product');
         
-        fullBox.prepend(`
+        if(boxProd.length === 0) {
+          fullBox.prepend(`
           <div class="header-right__cart-box__product">
             <img class="header-right__cart-box__img" src="./Assets/images/image-product-1-thumbnail.jpg" alt="product1">
             <p>Fall Limited Edition Sneakers $<span id="price">125.00</span> x <span id="quant">1</span> $<span id="price-end">125.00</span></p>
             <img id="delete" onclick="deleteProd()" src="./Assets/images/icon-delete.svg" alt="delete">
-          </div>
-        `);
+          </div> <a class="header-right__cart-box__checkout" href="#">Checkout</a>
+          `);
+
+        }
       } 
 
       $('#buy').on('click', function(){
